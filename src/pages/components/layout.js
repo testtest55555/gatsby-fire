@@ -14,8 +14,8 @@ export default function Layout({ children }) {
         <Link style={{ color: "white", marginRight: "1rem" }} to="/">
           My App
         </Link>
-        <Link style={{ color: "white" }} to="/dashboard">
-          Dashboard
+        <Link style={{ color: "white" }} to="/register">
+          Register
         </Link>
       </header>
       <main
