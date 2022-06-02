@@ -4,11 +4,12 @@ import { AuthContext } from "../context/auth"
 
 const Index = ()=> {
   const { user } = useContext(AuthContext)
-  console.log(user.email)
+  
   return (
     <Layout>
       <h1>Homepage</h1>
-      {user && <>Hello {user.email}</>}
+      {/* {user && <>Hello {user.email}</>} */}
+      <p>Hello world</p>
     </Layout>
   )
 }
