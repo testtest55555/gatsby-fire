@@ -48,7 +48,7 @@ export default function Layout({ children }) {
         style={{
           margin: "5rem auto",
           width: "90%",
-          maxWidth: 600,
+          maxWidth: 700,
         }}
       >
         {children}
