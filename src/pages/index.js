@@ -1,15 +1,15 @@
-import React, {useContext} from "react"
+import React, { useContext } from "react"
 import Layout from "../components/layout"
 import { AuthContext } from "../context/auth"
 
-const Index = ()=> {
+const Index = () => {
   const { user } = useContext(AuthContext)
-  
+
   return (
     <Layout>
       <h1>Homepage</h1>
-      {/* {user && <>Hello {user.email}</>} */}
-      <p>Hello world</p>
+      {user && <>Hello {user.email}</>}
+
     </Layout>
   )
 }
