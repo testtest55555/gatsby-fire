@@ -7,7 +7,8 @@ const Index = ()=> {
   console.log(user.email)
   return (
     <Layout>
-      Hello {user.email}
+      <h1>Homepage</h1>
+      {user && <>Hello {user.email}</>}
     </Layout>
   )
 }
