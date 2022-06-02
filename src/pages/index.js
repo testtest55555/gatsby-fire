@@ -1,10 +1,15 @@
-import React from "react"
+import React, {useContext} from "react"
 import Layout from "../components/layout"
+import { AuthContext } from "../context/auth"
 
-export default function index() {
+const Index = ()=> {
+  const { user } = useContext(AuthContext)
+  console.log(user.email)
   return (
     <Layout>
-      Hello world!
+      Hello {user.email}
     </Layout>
   )
 }
+
+export default Index
