@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react"
 import Layout from "../components/layout"
 import { AuthContext } from "../context/auth"
@@ -7,8 +8,9 @@ const Index = () => {
 
   return (
     <Layout>
-      <h1>Homepage</h1>
-      {user && <>Hello {user.email}</>}
+
+      {user && <><h1>Homepage</h1>Hello {user.email}</>}
+
 
     </Layout>
   )
